@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-image: url(./images/pattern-background-desktop.svg);
+      background-position: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main {
+      background-color: hsl(225, 100%, 98%);
+      margin: 2em;
+      border-radius: 10px;
+      height: 495px;
+      margin: 1em;
+      border-radius: 10px;
+      width: 345px;
+      text-align: center;
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 16px !important;
+    }
+
+    .img {
+      background-image: url(./images/illustration-hero.svg);
+      background-size: cover;
+      background-attachment: scroll;
+      background-repeat: no-repeat;
+      height: 30%;
+      margin-left: 0;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1em;
+      margin-top: 0;
+      font-size: 16px;
+      font-weight: 500;
+      color: rgb(39, 33, 33);
+    }
+
+    p.head {
+      font-weight: 900;
+      font-size: x-large !important;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .section {
+      width: 80%;
+      padding: 1em;
+      display: grid;
+      grid-template-columns: 50px auto 100px;
+      grid-template-rows: 20px 20px;
+      background-color: hsl(225, 100%, 94%);
+      border-radius: 10px;
+    }
+
+    .section > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .sec-img {
+      grid-column: 1 / 2;
+      grid-row: 1 / span 2;
+      margin-right: 1em;
+    }
+
+    .plan {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
+    .date {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    .change {
+      grid-column: 3 / 4;
+      grid-row: 1 / span 2;
+    }
+
+    .pay {
+      background-color: hsl(245, 75%, 52%);
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: cornsilk;
+      border-radius: 10px;
+      margin: 1em;
+      letter-spacing: 1px;
+      width: 90%;
+    }
+    .cancel {
+      margin-bottom: 0;
+    }
+
+    .cancel, .pay {
+      font-weight: 700;
+    }
+
+    .pay, .cancel:hover {
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 550px) {
+
+      body {
+        background-image: url(./images/pattern-background-mobile.svg);
+      }
+
+      .main {
+        width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 800px) {
+      .main {
+        width: 345px;
+      }
+    }
