@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<title>Fylo landing page with dark theme and features grid</title>
+
+		<!-- The output css filse -->
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- Out JavaScript file -->
+		<script src="./js/script.js" defer></script>
+
+		<!-- Fontawesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body class="text-White font-openSans">
+		<!-- Navbar -->
+		<nav class="bg-DarkBlueIntro p-6 fixed z-50 w-screen">
+			<!-- Flex container -->
+			<div class="container mx-auto flex items-center gap-12">
+				<!-- Logo -->
+				<div class="mr-auto">
+					<img src="./images/logo.svg" class="h-8" alt="logo" />
+				</div>
+
+				<!-- Menu items -->
+				<ul
+					class="hidden md:flex items-center gap-6 text-LightGray font-Raleway"
+				>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#testis">Testimonials</a></li>
+					<li><a href="#">Sign in</a></li>
+					<li>
+						<a
+							href="https://github.com/dipshanadh/tailwind-landing-page"
+							target="_blank"
+							>Github<i class="fa-brands fa-github fa-lg ml-3"></i
+						></a>
+					</li>
+				</ul>
+
+				<!-- Hmburger Icon -->
+				<button
+					id="menu-btn"
+					class="block hamburger md:hidden foucs:outline-none"
+				>
+					<span class="hamburger-top"></span
+					><span class="hamburger-middle"></span
+					><span class="hamburger-bottom"></span>
+				</button>
+			</div>
+
+			<!-- Moble navigaton -->
+			<div id="mobile-nav">
+				<!-- Menu items -->
+				<ul
+					class="hidden flex flex-col items-center gap-6 text-LightGray font-Raleway mt-8"
+					id="mobile-menu"
+				>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#testis">Testimonials</a></li>
+					<li><a href="#">Sign in</a></li>
+
+					<li>
+						<a
+							href="https://github.com/dipshanadh/tailwind-landing-page"
+							target="_blank"
+							>Github<i class="fa-brands fa-github fa-lg ml-3"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Main section -->
+		<main class="bg-DarkBlueMain">
+			<!-- Hero section -->
+			<section class="bg-DarkBlueIntro p-8 py-16 pt-32">
+				<!-- Flex container -->
+				<div
+					class="container mx-auto flex flex-col-reverse items-center justify-between gap-16 md:gap-32 md:flex-row"
+				>
+					<div class="flex-1 text-center md:text-left">
+						<h1 class="text-3xl font-bold font-Raleway">
+							All your files in one secure location, accessible
+							anywhere.
+						</h1>
+						<p class="my-6 text-LightGray">
+							Fylo stores all your most important files in one
+							secure location. Access them wherever you need,
+							share and collaborate with friends family, and
+							co-workers.
+						</p>
+						<button
+							class="bg-gradient-to-r from-Cyan to-Blue rounded-full py-2.5 px-5 hover:to-ModerateCyan"
+						>
+							Get Started
+						</button>
+					</div>
+					<div class="flex-1">
+						<img
+							src="./images/illustration-intro.png"
+							class="object-contain"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- Features section -->
+			<section class="px-8 pt-32" id="features">
+				<!-- Grid container -->
+				<div
+					class="container mx-auto flex flex-col md:grid grid-cols-2 grid-rows-2 gap-32"
+				>
+					<div class="flex flex-col items-center text-center">
+						<img src="./images/icon-access-anywhere.svg" alt="" />
+						<h3
+							class="text-lg font-semibold mb-2 mt-4 font-Raleway"
+						>
+							Access your files anywhere
+						</h3>
+						<p class="text-LightGray">
+							The ability to use a smartphone, tablet, or computer
+							to access your account means your files follow you
+							everywhere.
+						</p>
+					</div>
+					<div class="flex flex-col items-center text-center">
+						<img src="./images/icon-security.svg" alt="" />
+						<h3 class="text-lg font-semibold mb-2 mt- font-Raleway">
+							Security you can trust
+						</h3>
+						<p class="text-LightGray">
+							2-factor authentication and user-controlled
+							encryption are just a couple of the security
+							features we allow to help secure your files
+						</p>
+					</div>
+					<div class="flex flex-col items-center text-center">
+						<img src="./images/icon-collaboration.svg" alt="" />
+						<h3
+							class="text-lg font-semibold mb-2 mt-4 font-Raleway"
+						>
+							Real-time collaboration
+						</h3>
+						<p class="text-LightGray">
+							Securely share files and folders with friends,
+							family and colleagues for live collaboration. No
+							email attachments required.
+						</p>
+					</div>
+					<div class="flex flex-col items-center text-center">
+						<img src="./images/icon-any-file.svg" alt="" />
+						<h3
+							class="text-lg font-semibold mb-2 mt-4 font-Raleway"
+						>
+							Store any type of file
+						</h3>
+						<p class="text-LightGray">
+							Whether you're sharing holidays photos or work
+							documents, Fylo has you covered allowing for all
+							file types to be securely stored and shared.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Stay productive section -->
+			<section class="px-8 pt-32">
+				<!-- Flex container -->
+				<div
+					class="container mx-auto flex flex-col md:flex-row gap-16 items-center justify-between"
+				>
+					<img
+						src="./images/illustration-stay-productive.png"
+						alt=""
+						class="md:w-1/2"
+					/>
+					<div class="md:w-1/2">
+						<h1
+							class="text-3xl font-semibold max-w-sm font-Raleway"
+						>
+							Stay productive, wherever you are
+						</h1>
+						<p class="my-4 text-LightGray">
+							Never let location be an issue when accessing your
+							files. Fylo has you covered for all of your file
+							storage needs.
+						</p>
+						<p class="my-4 text-LightGray">
+							Securely share files and folders with friends,
+							family and colleagues for live collaboration. No
+							email attachments required.
+						</p>
+						<a
+							href="#"
+							class="text-Cyan underline underline-offset-8 hover:text-LightGray"
+						>
+							See how Fylo works
+							<img
+								src="./images/icon-arrow.svg"
+								class="inline ml-2"
+						/></a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Testimonials section -->
+			<section class="px-8 pt-32" id="testis">
+				<!-- Grid container -->
+				<div
+					class="container mx-auto flex flex-col md:grid grid-cols-3 gap-8 relative"
+				>
+					<!-- Quotes icon -->
+					<img
+						src="./images/bg-quotes.png"
+						class="absolute -top-8 -left-4"
+					/>
+
+					<!-- Testimonial 1 -->
+					<div
+						class="bg-DarkBlueTestis rounded-md p-8 z-10 shadow-lg"
+					>
+						<p class="mb-8 text-LightGray">
+							Fylo has improved our team productivity by an order
+							of magnitude. Since making the switch our team has
+							become a well-oiled collaboration machine.
+						</p>
+						<div class="user flex items-center gap-4">
+							<img
+								class="rounded-full row-span-2 w-12"
+								src="./images/profile-1.jpg"
+								alt=""
+							/>
+							<div class="flex flex-col">
+								<h4 class="font-semibold">Satish Patel</h4>
+								<p class="text-sm text-LightGray">
+									Founder & CEO, Huddle
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Testimonial 2 -->
+					<div class="bg-DarkBlueTestis rounded-md p-8 shadow-lg">
+						<p class="mb-8 text-LightGray">
+							Fylo has improved our team productivity by an order
+							of magnitude. Since making the switch our team has
+							become a well-oiled collaboration machine.
+						</p>
+						<div class="user flex items-center gap-4">
+							<img
+								class="rounded-full w-10"
+								src="./images/profile-2.jpg"
+								alt=""
+							/>
+							<div class="flex flex-col">
+								<h4 class="font-semibold">Bruce McKenzie</h4>
+								<p class="text-sm text-LightGray">
+									Founder & CEO, Huddle
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Testimonial 3 -->
+					<div class="bg-DarkBlueTestis rounded-md shadow-lg p-8">
+						<p class="mb-8 text-LightGray">
+							Fylo has improved our team productivity by an order
+							of magnitude. Since making the switch our team has
+							become a well-oiled collaboration machine.
+						</p>
+						<div class="user flex items-center gap-4">
+							<img
+								class="rounded-full row-span-2 w-10"
+								src="./images/profile-3.jpg"
+								alt=""
+							/>
+							<div class="flex flex-col">
+								<h4 class="font-semibold">Iva Boyd</h4>
+								<p class="text-sm text-LightGray">
+									Founder & CEO, Huddle
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Get early access card section -->
+			<section class="grid grid-rows-4">
+				<div class="row-start-1 row-end-3 col-start-1"></div>
+				<div
+					class="bg-DarkBlueFooter row-start-3 row-end-5 col-start-1"
+				></div>
+				<div
+					class="container mx-8 md:mx-auto w-auto bg-DarkBlueTestis rounded-lg drop-shadow-lg p-10 max-w-3xl text-center row-start-2 row-end-4 col-start-1"
+				>
+					<h1 class="text-3xl font-semibold font-Raleway">
+						Get early access today
+					</h1>
+					<p class="my-5 text-LightGray">
+						It only takes a minute to sign up and our free starter
+						tier is extremely generous. If you have any questions,
+						our support team would be happy to help you.
+					</p>
+					<div class="flex flex-col gap-4 justify-center">
+						<form
+							class="flex flex-col md:flex-row gap-4 justify-center"
+						>
+							<input
+								type="email"
+								placeholder="email@example.com"
+								class="px-5 py-2.5 rounded-full flex-1 text-DarkBlueMain text-center"
+								id="emailInput"
+								required
+							/>
+							<button
+								class="bg-gradient-to-r from-Cyan to-Blue rounded-full hover:to-ModerateCyan py-2.5 px-5"
+							>
+								Get Started
+							</button>
+						</form>
+						<p id="error" class="text-Red bold hidden"></p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="bg-DarkBlueFooter px-8 pb-16">
+			<!-- Footer section -->
+			<section class="container mx-auto">
+				<!-- logo -->
+				<img src="./images/logo.svg" class="mb-6" />
+				<!-- Flex container -->
+				<div
+					class="flex flex-col md:grid grid-cols-6 gap-8 text-LightGray"
+				>
+					<div
+						class="col-span-2 flex items-start justify-start gap-4"
+					>
+						<img src="./images/icon-location.svg" class="mt-2" />
+						<p class="max-w-sm">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua
+						</p>
+					</div>
+					<div>
+						<ul>
+							<li class="flex items-center gap-4 mb-2">
+								<img src="./images/icon-phone.svg" alt="" /><a
+									href="#"
+								>
+									+1-123-4567</a
+								>
+							</li>
+							<li class="flex items-center gap-4">
+								<img src="./images/icon-email.svg" alt="" /><a
+									href="#"
+								>
+									example@fylo.com</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="flex md:justify-end my-4 md:my-0">
+						<ul>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">Jobs</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+					</div>
+					<div class="flex md:justify-center">
+						<ul>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Terms</a></li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+					</div>
+					<!-- Logos -->
+					<div
+						class="flex md:justify-between items-start text-xl-4 gap-4"
+					>
+						<i
+							class="fa-brands fa-facebook-f border rounded-full p-2 px-2.5 hover:text-Cyan hover:border-Cyan"
+						></i
+						><i
+							class="fa-brands fa-instagram border rounded-full p-2 hover:text-Cyan hover:border-Cyan"
+						></i
+						><i
+							class="fa-brands fa-twitter border rounded-full p-2 hover:text-Cyan hover:border-Cyan"
+						></i>
+					</div>
+					<!-- Copyright text -->
+					<p class="md:hidden">&copy; Dipshan Adhikari 2022</p>
+				</div>
+				<p class="text-center text-LightGray mt-16 hidden md:block">
+					&copy; Dipshan Adhikari 2022
+				</p>
+			</section>
+		</footer>
+	</body>
+</html>
